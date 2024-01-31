@@ -42,7 +42,7 @@ const episodes = [
         category: "Growcast [Episódios]"
     },
     {
-        link: "ttps://www.youtube.com/embed/vW8G9KPwRL0",
+        link: "https://www.youtube.com/embed/vW8G9KPwRL0",
         title: "Growcast #07 | Desenvolvendo profissionais na área de TI",
         image: "https://img.youtube.com/vi/vW8G9KPwRL0/sddefault.jpg",
         category: "Growcast [Episódios]"

@@ -18,6 +18,12 @@ function showModal(buttonEl) {
     `
 }
 
+function stopIframeReprodution() {
+    videoContainer.innerHTML = `
+        <iframe class="w-100 h-100" src="" title="Youtube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    `;
+}
+
 function createVideoCard(episode, container) {
     container.innerHTML += `
         <div class="video-cards">

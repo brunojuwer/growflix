@@ -48,12 +48,6 @@
                     <a href="../index.html" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center py-4"><img src="./assets/logo-growflix.svg" alt="Texto growflix em vermelho"></a>
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators mb-0 mb-lg-3">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="position-relative">
@@ -71,65 +65,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="carousel-item">
-                                <div class="position-relative">
-                                    <img class="w-100 d-block" src="./assets/flutter-01.jpeg" alt="Imagem em miniatura do video Webinar - Recriando a interface do Linkedin com Flutter">
-
-                                    <div class="d-flex justify-content-center flex-column align-items-center">
-                                        <p class="m-0">WEBINAR EM</p>
-                                        <P class="display-2 dis fw-bold">FLUTTER</P>
-                                        <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" id="https://www.youtube.com/embed/WKbLXuP9S-c" onclick="showModal(this)" data-bs-toggle="modal" data-bs-target="#video-modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 15">
-                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                                            </svg>
-                                            Assistir
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="position-relative">
-                                    <img class="w-100" src="./assets/ux-ui-01.png" alt="Imagem em miniatura do video Live #1 Jornada UX/UI: O papel do UX/UI Designer no desenvolvimento de um produto digital - Growdev">
-
-                                    <div class="d-flex justify-content-center flex-column align-items-center">
-                                        <p class="m-0">JORNADA</p>
-                                        <P class="display-2 dis fw-bold">UX/UI</P>
-                                        <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" id="https://www.youtube.com/embed/-26aqPtgoEY" onclick="showModal(this)" data-bs-toggle="modal" data-bs-target="#video-modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 15">
-                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                                            </svg>
-                                            Assistir
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="position-relative">
-                                    <img class="w-100" src="./assets/diverse-01.png" alt="Imagem em miniatura do video Célula de talentos - Uma solução Growdev">
-
-                                    <div class="d-flex justify-content-center flex-column align-items-center">
-                                        <P class="display-2 dis fw-bold">DIVERSOS</P>
-                                        <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" id="https://www.youtube.com/embed/QsuhYgsSYQo" onclick="showModal(this)" data-bs-toggle="modal" data-bs-target="#video-modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 15">
-                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                                            </svg>
-                                            Assistir
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </header>
         
@@ -188,7 +124,7 @@
                           <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.815);">
                             <div class="modal-header border-0">
                                 <div class="container d-flex justify-content-end">
-                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="bg-transparent border-0">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="bg-transparent border-0" onclick="stopIframeReprodution()">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
                                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                                         </svg>

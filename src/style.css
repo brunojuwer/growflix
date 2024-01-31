@@ -1,5 +1,7 @@
 :root {
   --red-primary: #e50914;
+  --red-secondary: #ab060e;
+  --red-third: rgba(255, 0, 0, 0.8);
 }
 
 /* INDEX PAGE */
@@ -56,6 +58,7 @@ article {
 }
 
 aside {
+  margin-right: 1rem;
   border-right: 2px var(--red-primary) solid;
   background: rgba(0, 0, 0);
   max-width: 300px !important;
@@ -65,18 +68,18 @@ aside {
   display: none;
   position: fixed;
   border: none;
-  background-color: #0095ff;
+  background-color: var(--red-secondary);
   overflow: hidden;
   width: auto;
   padding: 0;
-  z-index: 9999;
-  bottom: 25px;
-  right: 20px;  
+  z-index: 99;
+  top: 25px;
+  right: 25px;  
   border-radius: 50%;
 }
 
 #aside-toggler:hover {
-  background-color: #0076c9;
+  background-color: var(--red-third);
 }
 
 #aside-toggler > div {
@@ -95,7 +98,7 @@ aside {
   border-radius: 5px;
   background-color: white;
   transition: all .5s ease-in-out;
-  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5)
+  box-shadow: 0 2px 5px var(--red-secondary)
 }
 
 #aside-toggler_burger::before,
@@ -107,7 +110,7 @@ aside {
   border-radius: 5px;
   background-color: white;
   transition: all .5s ease-in-out;
-  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5)
+  box-shadow: 0 2px 5px var(--red-secondary)
 }
 
 #aside-toggler_burger::before {
@@ -279,7 +282,7 @@ footer .col-6 p {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -296,19 +299,21 @@ footer .col-6 p {
   aside {
       position: fixed !important;
       transition: left .3s ease-in-out;
-      background: linear-gradient(90deg, rgba(48,48,48,.8) 100%, rgba(29,29,29,1) 60%, rgba(11,11,11,1) 81%, rgba(0,0,0,1) 100%);
+      background: black;
+      opacity: 0.8;
       top: 0;
       left: -400px;
       width: 300px !important;
       height: 100vh;
-      z-index: 999;
+      z-index: 99;
+      border: transparent;
   }
 
   #aside-toggler {
       display: block;
   }
 
-  ::-webkit-scrollbar {
-      display: none;
+  #main-home section {
+    justify-content: center;
   }
 }
