@@ -206,6 +206,11 @@ aside {
   height: 220px;
   border-radius: 10px;
   position: relative;
+  transition: all 200ms ease;
+}
+
+.video-cards:hover {
+  scale: 1.03;
 }
 
 .video-cards:hover > div {
